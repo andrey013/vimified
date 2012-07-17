@@ -276,7 +276,7 @@ set noeol
 set relativenumber
 set numberwidth=10
 set ruler 
-set shell=/bin/zsh 
+" set shell=/bin/zsh 
 set showcmd 
 
 set matchtime=2
