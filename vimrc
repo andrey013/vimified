@@ -81,7 +81,7 @@ endif
 " _. Fancy {{{
 if count(g:vimified_packages, 'fancy')
     Bundle 'Lokaltog/vim-powerline'
-    let g:Powerline_symbols = 'fancy'
+    "let g:Powerline_symbols = 'fancy'
     let g:Powerline_cache_enabled = 1
 endif
 " }}}
@@ -276,7 +276,7 @@ set noeol
 set relativenumber
 set numberwidth=10
 set ruler 
-" set shell=/bin/zsh 
+"set shell=/bin/zsh 
 set showcmd 
 
 set matchtime=2
