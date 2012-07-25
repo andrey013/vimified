@@ -109,12 +109,12 @@ if count(g:vimified_packages, 'coding')
     nmap <leader># :call NERDComment(0, "invert")<cr>
     vmap <leader># :call NERDComment(0, "invert")<cr>
 
-    " - Bundle 'msanders/snipmate.vim'
+    Bundle 'msanders/snipmate.vim'
     Bundle 'sjl/splice.vim'
 
     Bundle 'tpope/vim-fugitive' 
     nmap <leader>g :Ggrep
-    " ,f for global git serach for word under the cursor (with highlight)
+    " ,f for global git search for word under the cursor (with highlight)
     nmap <leader>f :let @/="\\<<C-R><C-W>\\>"<CR>:set hls<CR>:silent Ggrep -w "<C-R><C-W>"<CR>:ccl<CR>:cw<CR><CR>
     " same in visual mode
     :vmap <leader>f y:let @/=escape(@", '\\[]$^*.')<CR>:set hls<CR>:silent Ggrep -F "<C-R>=escape(@", '\\"#')<CR>"<CR>:ccl<CR>:cw<CR><CR>
@@ -273,7 +273,7 @@ set noswapfile
 
 set modelines=0 
 set noeol
-set relativenumber
+"set relativenumber
 set numberwidth=10
 set ruler 
 "set shell=/bin/zsh 
@@ -290,15 +290,15 @@ set textwidth=80
 set shiftwidth=4 
 set softtabstop=4
 set expandtab
-set wrap 
+set wrap
 set formatoptions=qrn1
 set colorcolumn=+1
 " }}}
 
-set visualbell 
+set visualbell
 
 set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc
-set wildmenu 
+set wildmenu
 
 set dictionary=/usr/share/dict/words
 " }}}
@@ -347,7 +347,7 @@ set hlsearch
 noremap <leader><space> :noh<cr>:call clearmatches()<cr>
 
 " Don't jump when using * for search 
-nnoremap * *<c-o>
+" nnoremap * *<c-o>
 
 " Keep search matches in the middle of the window.
 nnoremap n nzzzv
@@ -373,8 +373,8 @@ nnoremap <silent> <leader>h3 :execute '3match InterestingWord3 /\<<c-r><c-w>\>/'
 " Navigation & UI {{{
 
 " Begining & End of line in Normal mode 
-noremap H ^
-noremap L g_
+" noremap H ^
+" noremap L g_
 
 " more natural movement with wrap on
 nnoremap j gj
