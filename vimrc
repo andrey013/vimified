@@ -171,6 +171,9 @@ endif
 if count(g:vimified_packages, 'haskell')
     Bundle 'Twinside/vim-syntax-haskell-cabal'
     Bundle 'lukerandall/haskellmode-vim'
+    Bundle 'eagletmt/ghcmod-vim'
+    Bundle 'ujihisa/neco-ghc'
+    Bundle 'Shougo/neocomplcache'
 
     au BufEnter *.hs compiler ghc
 

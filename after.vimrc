@@ -1,6 +1,6 @@
-syntax enable
-set background=dark
-colorscheme solarized
+"syntax enable
+"set background=dark
+"colorscheme solarized
 
 set fileencodings=ucs-bom,utf8,prc,cp1251
 
