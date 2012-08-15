@@ -221,7 +221,7 @@ nmap <silent> <leader>n :set invnumber<CR>
 nmap <silent> <leader>p :set invpaste<CR>
 nmap <silent> <leader>i :set invrelativenumber<CR>
 
-nmap ; :
+"nmap ; :
 
 " Emacs bindings in command line mode
 cnoremap <c-a> <home>
