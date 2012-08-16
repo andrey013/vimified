@@ -55,8 +55,8 @@ if count(g:vimified_packages, 'general')
     Bundle 'tpope/vim-speeddating'
     Bundle 'tpope/vim-surround'
     Bundle 'tpope/vim-unimpaired'
-    Bundle 'scrooloose/nerdtree' 
-    nmap <C-u> :NERDTreeToggle<CR>
+    "Bundle 'scrooloose/nerdtree' 
+    "nmap <C-u> :NERDTreeToggle<CR>
     " Disable the scrollbars (NERDTree)
     set guioptions-=r
     set guioptions-=L
@@ -75,6 +75,7 @@ if count(g:vimified_packages, 'general')
     Bundle 'vim-scripts/scratch.vim'
 
     Bundle 'vim-scripts/bufexplorer.zip'
+    Bundle 'Shougo/vimproc'
 endif
 " }}}
 
@@ -121,7 +122,7 @@ if count(g:vimified_packages, 'coding')
 
     Bundle 'scrooloose/syntastic'
     let g:syntastic_enable_signs=1
-    let g:syntastic_auto_loc_list=1
+    "let g:syntastic_auto_loc_list=1
 
     " --
 
@@ -177,8 +178,9 @@ if count(g:vimified_packages, 'haskell')
 
     au BufEnter *.hs compiler ghc
 
-    let g:ghc = "/usr/local/bin/ghc"
+    let g:ghc = "ghc"
     let g:haddock_browser = "open"
+    au FileType haskell let b:ghc_staticoptions = '-package ghc'
 endif
 " }}}
 
